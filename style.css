@@ -1,0 +1,219 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+
+#main #left{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    background-color: rgb(252, 252, 252);
+    overflow: hidden;
+}
+
+#main #right{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(191, 195, 252);
+}
+
+#nav{
+    position: absolute;
+    z-index: 99;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    height: 50px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+#nav .leftnav a{
+    margin-left: 40px;
+    text-decoration: none;
+    color: black;
+    opacity: .6;
+}
+
+#nav .rightnav a{
+    margin-right: 40px;
+    text-decoration: none;
+    color: black;
+    opacity: .6;
+}
+
+.rightnav #search{
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+#nav h2{
+    font-family: sans-serif;
+    letter-spacing: -5px;
+    font-weight: 900;
+}
+
+#left img{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 30%;
+    height: 100%;
+}
+
+#left #about{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 25%;
+    /* height: 500px; */
+    /* border: 2px solid red; */
+}
+
+#left #about h1{
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+#left #about p{
+    opacity: .6;
+}
+
+#progress{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 50px; */
+    /* background-color: blue; */
+    margin-top: 25px;
+}
+
+.lrpgs{
+    width: 40%;
+    /* height: 50px; */
+    /* background-color: yellow; */
+}
+
+.lrpgs .row1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lrpgs .row2 .pgsbar{
+    margin-top: 10px;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(219, 249, 250);
+}
+
+.lrpgs .row2 .pgsbar .pgsvalue{
+    width: 60%;
+    height: 100%;
+    background-color: rgb(119, 180, 180);
+}
+
+#disaster{
+    position: absolute;
+    top: 25%;
+    right: 0%;
+    width: 50%;
+    height: 300px;
+    background-image: url("https://images.unsplash.com/photo-1597769906792-4b2f9a3403a8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fHNrYXRlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    padding: 15px 20px;
+}
+
+#disaster h1{
+    font-family: sans-serif;
+}
+
+#right>h1{
+    transform-origin: bottom left;
+    transform: rotate(90deg);
+    font-family: sans-serif;
+    font-size: 50px;
+    position: absolute;
+    top: 42%;
+    left: 5%;
+    opacity: .4;
+}
+
+#rightprg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 28%;
+    left: 25%;
+    width: 50%;
+    /* height: 5px; */
+    /* background-color: rgb(106, 94, 117); */
+}
+
+#rgtpgs{
+    width: 80%;
+    height: 5px;
+    background-color: rgb(153, 211, 211);
+}
+
+#realpgs{
+    width: 60%;
+    height: 5px;
+    background-color: #39BAE4;
+}
+
+#rgtbtmimg{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 200px;
+    background-image: url(skating.jpg);
+    background-size: cover;
+    /* position: relative; */
+}
+
+.rgtbtmbck{
+    position: absolute;
+    left: -10%;
+    width: 100px;
+    height: 100%;
+    background-color: black;
+}
+
+#rgtbck1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(218, 222, 255);
+}
+
+#rgtbck2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background-color: #5EBCCF;
+}
